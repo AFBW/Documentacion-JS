@@ -25,4 +25,4 @@ console.log(total);
 
 const totalAPagar = calcularImpuesto(total);
 
-console.log(`El total a pagar con impuestos es de: $${totalAPagar}`);
+console.log(`El total a pagar con impuestos es de: ${totalAPagar}€`);

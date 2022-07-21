@@ -1,5 +1,5 @@
 const producto = {
-    nombreProducto : "Monitor 20 Pulgadas",
+    nombreProducto: "Monitor 20 Pulgadas",
     precio: 300,
     disponible: true
 }
@@ -9,6 +9,7 @@ const medidas = {
     medida: '1m'
 }
 
+// Spread Operator
 const nuevoProducto = { ...producto, ...medidas };
 
 console.log(producto);

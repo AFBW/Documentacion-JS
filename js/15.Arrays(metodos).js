@@ -30,7 +30,8 @@ resultado = carrito.some(function (producto) {
 // Simplificado
 // resultado = carrito.some(producto => producto.nombre === 'Celular PRO');
 
-/* Reduce: Nos va a seleccionar todos los precios de nuestro objeto para poder realizar
+/*
+ Reduce: Nos va a seleccionar todos los precios de nuestro objeto para poder realizar
  una operacion, en este caso de suma 0 seria el valor donde se inicia */
 resultado = carrito.reduce(function (total, producto) {
     return total + producto.precio
