@@ -1,7 +1,7 @@
 
 // Arrow Functions
 
-const sumar2 = (n1, n2) => console.log( n1 + n2);
+const sumar2 = (n1, n2) => console.log(n1 + n2);
 sumar2(5, 10);
 
 
@@ -23,29 +23,30 @@ const carrito = [
     { nombre: 'Tablet', precio: 300 },
     { nombre: 'Audifonos', precio: 200 },
     { nombre: 'Teclado', precio: 50 },
-    { nombre: 'Celular', precio: 500},
-    { nombre: 'Bocinas', precio: 300},
-    { nombre: 'Laptop', precio: 800}
+    { nombre: 'Celular', precio: 500 },
+    { nombre: 'Bocinas', precio: 300 },
+    { nombre: 'Laptop', precio: 800 }
 ];
 
 // forEach
-meses.forEach( mes => {
-    if(mes == 'Marzo') {
+meses.forEach(mes => {
+    if (mes == 'Marzo') {
         console.log('Marzo si existe');
     }
 });
 
 let resultado;
 
-// Some ideal para arreglo de objetos
-resultado = carrito.some( producto => producto.nombre === 'Celular');
+// Some (BUSQUEDA ideal para Objetos en Arrays)
+resultado = carrito.some(producto => producto.nombre === 'Celular');
 
-// Reduce
-resultado = carrito.reduce( (total, producto) =>  total + producto.precio, 0);
+/*Reduce: Nos va a seleccionar todos los precios de nuestro objeto para poder realizar
+ una operacion, en este caso de suma 0 seria el valor donde se inicia */
+resultado = carrito.reduce((total, producto) => total + producto.precio, 0);
 
 // Filter
-resultado = carrito.filter( producto => producto.precio > 400);
-resultado = carrito.filter( producto =>  producto.nombre !== 'Celular');
+resultado = carrito.filter(producto => producto.precio > 400);
+resultado = carrito.filter(producto => producto.nombre !== 'Celular');
 
 console.log(resultado);
 
